@@ -43,17 +43,48 @@
                                     <outlet property="delegate" destination="SEL-nd-fFh" id="goz-Da-aiE"/>
                                 </connections>
                             </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vzp-TC-WSr" userLabel="Bottom Semitransparent view">
+                                <rect key="frame" x="0.0" y="528" width="320" height="40"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hsG-7p-MaU">
+                                        <rect key="frame" x="8" y="6" width="304" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="Ydz-Ue-rxr"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="OpenStreet"/>
+                                            <segment title="OpenCycle"/>
+                                            <segment title="MapQuest"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.94117647409439087" green="0.50196081399917603" blue="0.18823529779911041" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="mapTypeChanged:" destination="SEL-nd-fFh" eventType="valueChanged" id="fco-ya-yUB"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9686274528503418" green="0.96470588445663452" blue="0.95686274766921997" alpha="0.80395921610169496" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hsG-7p-MaU" firstAttribute="centerY" secondItem="Vzp-TC-WSr" secondAttribute="centerY" id="4TG-Ek-Jj4"/>
+                                    <constraint firstAttribute="height" constant="40" id="Iqd-NG-HCl"/>
+                                    <constraint firstAttribute="trailing" secondItem="hsG-7p-MaU" secondAttribute="trailing" constant="8" id="gqr-hS-XWb"/>
+                                    <constraint firstItem="hsG-7p-MaU" firstAttribute="leading" secondItem="Vzp-TC-WSr" secondAttribute="leading" constant="8" id="hpO-6W-0so"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dts-g1-1TO" firstAttribute="top" secondItem="Ryy-bT-tCz" secondAttribute="bottom" id="Fea-6i-8xO"/>
+                            <constraint firstItem="Vzp-TC-WSr" firstAttribute="leading" secondItem="Trx-AI-iPQ" secondAttribute="leading" id="Lcz-CI-ilj"/>
                             <constraint firstAttribute="trailing" secondItem="Ryy-bT-tCz" secondAttribute="trailing" id="SYS-JD-QNS"/>
+                            <constraint firstItem="dts-g1-1TO" firstAttribute="top" secondItem="Vzp-TC-WSr" secondAttribute="bottom" id="aHb-Pg-UVi"/>
                             <constraint firstItem="Ryy-bT-tCz" firstAttribute="leading" secondItem="Trx-AI-iPQ" secondAttribute="leading" id="bgS-hB-yBJ"/>
                             <constraint firstItem="Ryy-bT-tCz" firstAttribute="top" secondItem="EvT-2W-dAg" secondAttribute="bottom" id="rL5-7W-fmF"/>
+                            <constraint firstAttribute="trailing" secondItem="Vzp-TC-WSr" secondAttribute="trailing" id="wzf-96-DE5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Offline Mapper" id="gDc-it-RyR"/>
                     <connections>
+                        <outlet property="mapTypeSegmentedControl" destination="hsG-7p-MaU" id="HJ2-mn-va8"/>
                         <outlet property="mapView" destination="Ryy-bT-tCz" id="b5F-IZ-p4C"/>
                     </connections>
                 </viewController>
