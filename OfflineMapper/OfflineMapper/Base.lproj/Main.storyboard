@@ -39,6 +39,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ryy-bT-tCz">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <connections>
+                                    <outlet property="delegate" destination="SEL-nd-fFh" id="goz-Da-aiE"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -50,6 +53,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Offline Mapper" id="gDc-it-RyR"/>
+                    <connections>
+                        <outlet property="mapView" destination="Ryy-bT-tCz" id="b5F-IZ-p4C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIF-2a-CMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
