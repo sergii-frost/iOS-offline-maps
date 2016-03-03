@@ -46,7 +46,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vzp-TC-WSr" userLabel="Bottom Semitransparent view">
                                 <rect key="frame" x="0.0" y="528" width="320" height="40"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hsG-7p-MaU">
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hsG-7p-MaU">
                                         <rect key="frame" x="8" y="6" width="304" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="28" id="Ydz-Ue-rxr"/>
