@@ -13,6 +13,7 @@
 		4547CA201C86F16C00E2B506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4547CA1F1C86F16C00E2B506 /* Assets.xcassets */; };
 		4547CA231C86F16C00E2B506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4547CA211C86F16C00E2B506 /* LaunchScreen.storyboard */; };
 		4547CA2B1C86F2CA00E2B506 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4547CA2A1C86F2CA00E2B506 /* MapKit.framework */; };
+		4547CA311C8724A900E2B506 /* MKSwerefTileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547CA301C8724A900E2B506 /* MKSwerefTileOverlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4547CA221C86F16C00E2B506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4547CA241C86F16C00E2B506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4547CA2A1C86F2CA00E2B506 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4547CA301C8724A900E2B506 /* MKSwerefTileOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKSwerefTileOverlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		4547CA171C86F16C00E2B506 /* OfflineMapper */ = {
 			isa = PBXGroup;
 			children = (
+				4547CA301C8724A900E2B506 /* MKSwerefTileOverlay.swift */,
 				4547CA181C86F16C00E2B506 /* AppDelegate.swift */,
 				4547CA1A1C86F16C00E2B506 /* ViewController.swift */,
 				4547CA1C1C86F16C00E2B506 /* Main.storyboard */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4547CA1B1C86F16C00E2B506 /* ViewController.swift in Sources */,
+				4547CA311C8724A900E2B506 /* MKSwerefTileOverlay.swift in Sources */,
 				4547CA191C86F16C00E2B506 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
